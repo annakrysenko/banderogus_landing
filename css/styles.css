@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root{
+  --dark: rgba(29, 30, 34, 1);
+  --orange: rgba(245, 122, 39, 1);
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color:var(--dark)
+}
+
+/* -------------------------------- SECTION 1 -------------------------------- */
+
+.main-page {
+  background: linear-gradient(269.87deg, #FDFFB3 0.11%, #A5DEFF 99.88%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  position: absolute;
+}
+
+header {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  display: flex;
+  position: absolute;
+  left: 95px;
+  top: 0;
+}
+
+.logo-text {
+  margin-left: 16px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* ------------------------------------------------------- */
+
+.contant-section1{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 95px;
+  margin-left: 95px;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+.main-window {
+  background-color: white;
+ 
+  padding-left: 48px;
+  padding-bottom: 64px;
+  padding-top: 48px;
+  padding-right: 48px;
+   
+  align-self: center;
+}
+
+.gus {
+  height: 100%;
+}  
+ 
+
+.gus-img {
+ align-items: flex-end;
+  padding: 0;
+
+}
+
+.first-p {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.second-p {
+  font-weight: 600;
+  font-size: 24px; 
+  color: var(--orange); 
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  margin-bottom: 24px;
+}
+
+.third-p {
+  margin-bottom: 48px;
+  width: 440px;
+}
+
+.start-gus {
+  background-color: var(--orange);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ---------------------- SECTION 2 -------------------------- */
+
+.facts-page {
+  margin-left: 95px;
+  margin-right: 95px;
+}
+
+.facts-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+}
+
+h2 {
+  margin: 16px auto;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100px;
+}
+
+.about-gus {
+  text-align: center;
+  max-width: 875px;
+}
+
+/* ---------------------------------------------------- */
+
+.facts {
+  display: flex;
+  justify-content: center;
+}
+
+.fact {
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 12px;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.facts p {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+
+/* ----------------------- FOOTER --------------------------- */
+.footer {
+  padding: 80px 95px ;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background: linear-gradient(269.87deg, #FDFFB3 0.11%, #A5DEFF 99.88%);
+  padding-top: 60px;
+  padding-bottom: 84px;
+  padding-left: 147px;
+  padding-right: 147px;
+  text-align: center;
+}
+
+/* ----------- MODAL  -------------- */
+
+.modal-bgd {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(27, 29, 31, 0.7);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.modal-form-container {
+  
+  background-color: white;
+  padding: 32px 92px 60px 92px;
+}
+
+.modal-form p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+.modal-form h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 32px auto 0 auto;
+
+}
+
+.modal-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.modal-form-field-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.modal-form-field-input {
+  border: 1px solid #005BBB;
+  border-radius: 8px;
+  height: 48px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark);
+  padding: 4px 8px;
+}
+
+.modal-form-button{
+  background-color: var(--orange);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  color: var(--dark);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  border: 0;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+
+}
+
+.gus-anim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
